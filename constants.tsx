@@ -76,26 +76,47 @@ export const PROCESS_STEPS: ProcessStep[] = [
 export const TESTIMONIALS: Testimonial[] = [
     {
         id: '1',
-        name: 'Ana Paula Silva',
-        role: 'Mãe do Pedro (5 anos)',
-        text: 'Meu filho não largava o tablet. Com esses moldes ele passou HORAS montando brinquedos. Finalmente paz na casa e ele feliz criando!',
-        avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026024d',
+        name: 'Fernanda Oliveira',
+        location: 'São Paulo, SP',
+        timeAgo: 'há 15 min',
+        text: 'Gente, que material maravilhoso! Meu filho Davi passou a semana toda montando os brinquedos. Finalmente consegui tirar ele do tablet. Vale cada centavo!',
+        avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150&h=150',
         rating: 5
     },
     {
         id: '2',
-        name: 'Mariana Costa',
-        role: 'Mãe da Julia (7 anos)',
-        text: 'A qualidade dos desenhos é incrível. Imprimi em papel mais durinho e os bonecos ficaram perfeitos. Recomendo muito!',
-        avatar: 'https://i.pravatar.cc/150?u=a04258a2462d826712d',
+        name: 'Juliana Costa',
+        location: 'Curitiba, PR',
+        timeAgo: 'há 42 min',
+        text: 'A qualidade dos desenhos é incrível. Imprimi em papel mais durinho e os bonecos ficaram perfeitos. Recomendo muito para quem quer paz nas férias kkk',
+        avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150',
         rating: 5
     },
     {
         id: '3',
         name: 'Roberto Almeida',
-        role: 'Pai de Gêmeos (4 anos)',
-        text: 'Melhor investimento das férias. Eles ficam entretidos a tarde toda recortando e colando. Valeu cada centavo.',
-        avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026704d',
+        location: 'Belo Horizonte, MG',
+        timeAgo: 'há 1h',
+        text: 'Comprei para meus gêmeos e foi a salvação. Eles ficam entretidos a tarde toda recortando e colando. Melhor investimento que fiz.',
+        avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150&h=150',
+        rating: 5
+    },
+    {
+        id: '4',
+        name: 'Patrícia Souza',
+        location: 'Rio de Janeiro, RJ',
+        timeAgo: 'há 2h',
+        text: 'O pacote Premium vale muito a pena pelos bônus. Os jogos da memória são ótimos. Minha filha de 4 anos amou!',
+        avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150&h=150',
+        rating: 5
+    },
+    {
+        id: '5',
+        name: 'Carla Mendez',
+        location: 'Porto Alegre, RS',
+        timeAgo: 'há 3h',
+        text: 'Simplesmente apaixonada! 😍 É muita coisa, nem acreditei quando vi a quantidade de arquivos. Dá pra brincar o ano todo.',
+        avatar: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=150&h=150',
         rating: 5
     }
 ];

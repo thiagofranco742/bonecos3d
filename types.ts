@@ -10,7 +10,8 @@ export interface Feature {
 export interface Testimonial {
     id: string;
     name: string;
-    role: string;
+    location: string;
+    timeAgo: string;
     text: string;
     avatar: string;
     rating: number;
