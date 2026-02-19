@@ -26,11 +26,13 @@ const Hero: React.FC = () => {
                     Tire seu filho das telas <span className="text-brand-orange">HOJE</span> e desperte a criatividade!
                 </h1>
 
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform rotate-1 hover:rotate-0 transition-transform duration-500 mb-8">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white mb-8">
                     <img 
                         src="https://media.atomicatpages.net/u/jkXVp80niLVY7exUbTx8s7SZirl2/Pictures/share/page2MlLdnZ/KvEmjm8361205.png?quality=84" 
                         alt="Crianças brincando com moldes de papel" 
                         className="w-full h-auto object-cover"
+                        loading="eager"
+                        fetchPriority="high"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>

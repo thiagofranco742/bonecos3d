@@ -72,6 +72,7 @@ const Pricing: React.FC = () => {
                                 variant={plan.color === 'orange' ? 'secondary' : 'primary'} 
                                 fullWidth
                                 className="text-lg"
+                                href={plan.buttonLink}
                             >
                                 {plan.buttonText}
                             </Button>

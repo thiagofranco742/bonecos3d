@@ -134,7 +134,7 @@ export const PRICING_PLANS: PricingPlan[] = [
             'Suporte por e-mail'
         ],
         buttonText: 'Quero o Básico',
-        buttonLink: '#',
+        buttonLink: 'https://pay.cakto.com.br/nodpsin_775241',
         color: 'green'
     },
     {
@@ -151,7 +151,7 @@ export const PRICING_PLANS: PricingPlan[] = [
             'Moldes Premium Alta Resolução'
         ],
         buttonText: 'QUERO O PREMIUM AGORA!',
-        buttonLink: '#',
+        buttonLink: 'https://pay.cakto.com.br/38ovo4g',
         color: 'orange'
     }
 ];
