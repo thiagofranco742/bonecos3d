@@ -5,25 +5,25 @@ export const FEATURES: Feature[] = [
     {
         id: '1',
         title: '+450 Brinquedos de Papel',
-        description: 'Animais, monstros e personagens 3D que seu filho vai amar montar e brincar por horas.',
+        description: 'Animais, monstros e personagens fofos que seu filho monta com orgulho e brinca por horas — desenvolvendo coordenação e paciência.',
         icon: Scissors
     },
     {
         id: '2',
         title: 'Quebra-Cabeças Temáticos',
-        description: 'Personagens favoritos, animais e cenários que estimulam a concentração e o raciocínio lógico.',
+        description: 'Estimulam concentração e raciocínio lógico, enquanto criam memórias felizes em família.',
         icon: Puzzle
     },
     {
         id: '3',
         title: '550 Desenhos para Colorir',
-        description: 'Desenhos fofinhos, temas bíblicos e educativos que desenvolvem a coordenação motora fina.',
+        description: 'Fofinhos, educativos e com temas que inspiram valores positivos e criatividade pura.',
         icon: Palette
     },
     {
         id: '4',
         title: '400 Personagens Temáticos',
-        description: 'Heróis, princesas, piratas e tudo o que faz a imaginação do seu filho voar longe!',
+        description: 'Heróis, princesas e piratas que alimentam a imaginação inocente e saudável do seu pequeno.',
         icon: User
     }
 ];
@@ -32,21 +32,21 @@ export const BONUSES: BonusItem[] = [
     {
         id: '1',
         title: 'Bônus 1: 100 Jogos Quebra-Cabeça',
-        description: 'Personagens, animais, temas educativos... Seu filho desenvolve concentração, raciocínio lógico e paciência enquanto se diverte por horas.',
+        description: 'Seu filho desenvolve concentração e paciência brincando, te dando aquele momento de paz que você merece.',
         image: 'https://media.atomicatpages.net/u/jkXVp80niLVY7exUbTx8s7SZirl2/Pictures/share/page2MlLdnZ/rjguDo7814177.png?quality=88',
         value: 47.00
     },
     {
         id: '2',
         title: 'Bônus 2: 100 Jogos da Memória',
-        description: 'Jogos clássicos de memória com temas que seu filho ama. Estimula memória, atenção e coordenação de forma lúdica.',
+        description: 'Momentos de conexão e risadas em família, ou entretenimento saudável enquanto você descansa.',
         image: 'https://media.atomicatpages.net/u/jkXVp80niLVY7exUbTx8s7SZirl2/Pictures/share/page2MlLdnZ/SzPnvr7953749.png?quality=77',
         value: 37.00
     },
     {
         id: '3',
         title: 'Bônus 3: 100 Atividades para Colorir',
-        description: 'Desenhos incríveis para colorir + recortes educativos. Desenvolve coordenação motora fina, criatividade e concentração.',
+        description: 'Atividades calmas que relaxam e estimulam a criatividade, longe da agitação das telas.',
         image: 'https://media.atomicatpages.net/u/jkXVp80niLVY7exUbTx8s7SZirl2/Pictures/share/page2MlLdnZ/wxPSys8090707.png?quality=79',
         value: 43.00
     }
@@ -56,19 +56,19 @@ export const PROCESS_STEPS: ProcessStep[] = [
     {
         id: '1',
         title: '1. Compra segura & Recebe Agora',
-        description: 'Após o pagamento (aprovado em segundos), você recebe por e-mail e WhatsApp o acesso completo.',
+        description: 'Compra segura e rápida — acesso imediato por e-mail/WhatsApp.',
         icon: Download
     },
     {
         id: '2',
         title: '2. Baixa e imprime em casa',
-        description: 'Imprima quantas vezes quiser com papel sulfite comum ou 180g. Qualquer impressora serve!',
+        description: 'Imprima em casa com papel comum — sem complicação.',
         icon: Printer
     },
     {
         id: '3',
         title: '3. Recorta, cola e brinca',
-        description: 'Cada molde vem com manual passo a passo. Seu filho vai amar montar e brincar por horas!',
+        description: 'Siga o passo a passo simples e veja o sorriso do seu filho crescer!',
         icon: Smile
     }
 ];
@@ -128,9 +128,9 @@ export const PRICING_PLANS: PricingPlan[] = [
         price: 10.00,
         oldPrice: 37.90,
         features: [
-            '+450 moldes de brinquedos',
-            'Acesso imediato',
-            'Garantia de 7 dias',
+            'Comece simples e seguro',
+            'Ideal para testar',
+            'Ver o sorriso do filho',
             'Suporte individual no WhatsApp'
         ],
         buttonText: 'Quero o Básico',
@@ -144,14 +144,14 @@ export const PRICING_PLANS: PricingPlan[] = [
         oldPrice: 97.00,
         isPopular: true,
         features: [
-            'TUDO do pacote básico',
-            '+750 moldes extras (Total 1.200)',
-            '3 Bônus Exclusivos (R$97 grátis)',
-            'Acesso vitalício + Atualizações',
+            'Tudo que seu filho merece',
+            '+1.200 moldes para o ano todo',
+            '3 Bônus Incríveis',
+            'Acesso vitalício',
             'Moldes Premium Alta Resolução',
             'Suporte VIP individual no WhatsApp'
         ],
-        buttonText: 'QUERO O PREMIUM AGORA!',
+        buttonText: 'Quero Dar ao Meu Filho Momentos Felizes!',
         buttonLink: 'https://pay.cakto.com.br/38ovo4g',
         color: 'orange'
     }

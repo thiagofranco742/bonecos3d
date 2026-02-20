@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
                 </div>
 
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-8">
-                    Chega de Telas! +1.200 Brinquedos de Papel para Imprimir Agora!
+                    Chega de Telas! +1.200 Brinquedos de Papel que Nutrem a Imaginação e Fortalecem Laços em Família ❤️
                 </h1>
 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white mb-8">
@@ -43,10 +43,10 @@ const Hero: React.FC = () => {
 
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
                     <Button onClick={scrollToGallery} variant="secondary" className="w-full sm:w-auto text-xl px-10 py-5">
-                        QUERO MEUS MOLDES AGORA!
+                        Quero Dar ao Meu Filho Momentos Felizes e Saudáveis Agora!
                     </Button>
                     <span className="text-sm text-gray-500 font-medium mt-2 sm:mt-0">
-                        🔒 Compra 100% Segura
+                        Acesso Imediato + Garantia de 7 Dias ❤️
                     </span>
                 </div>
             </div>

@@ -38,10 +38,10 @@ const HowItWorks: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                        Como você recebe e começa a usar EM MINUTOS?
+                        Tudo pensado para facilitar sua vida de pai/mãe
                     </h2>
                     <p className="text-xl text-white/90 max-w-3xl mx-auto">
-                        É simples, rápido e 100% digital. Sem esperar correio, sem gastar com frete.
+                        Simples, rápido e feito com carinho.
                     </p>
                 </div>
 

@@ -11,10 +11,10 @@ const Bonus: React.FC = () => {
                         <Gift size={16} /> Bônus Exclusivos
                     </span>
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        Além dos +1.200 moldes, você recebe <span className="text-brand-orange">3 Bônus Incríveis</span>
+                        Bônus Exclusivos para Cuidar Ainda Mais da Diversão e do Desenvolvimento do Seu Filho
                         <br />
                         <span className="text-xl md:text-2xl font-medium text-gray-600 block mt-2">
-                            (Valor real: <span className="line-through decoration-red-500">R$ 127,00</span> → <span className="text-green-600 font-bold">GRÁTIS</span>)
+                            (Valor R$127 → <span className="text-green-600 font-bold">GRÁTIS</span> para você!)
                         </span>
                     </h2>
                     <p className="text-lg text-gray-700 max-w-3xl mx-auto">

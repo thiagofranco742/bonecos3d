@@ -90,7 +90,7 @@ const Pricing: React.FC = () => {
                             {plan.isPopular && (
                                 <p className="text-center mt-4 text-xs text-gray-500 flex items-center justify-center gap-1">
                                     <ShieldCheck size={14} className="text-green-500"/>
-                                    Garantia Incondicional de 7 Dias
+                                    Garantia Incondicional de 7 Dias: Se não amar, devolvemos seu dinheiro. Sem perguntas.
                                 </p>
                             )}
                         </div>
@@ -100,7 +100,7 @@ const Pricing: React.FC = () => {
                 <div className="mt-16 text-center">
                    <div className="inline-block bg-red-100 border border-red-200 text-red-700 px-6 py-3 rounded-lg animate-pulse">
                         <p className="font-bold text-sm md:text-base">
-                             ⚠️ Oferta válida apenas HOJE. O preço subirá amanhã.
+                             ⚠️ Preço promocional válido só hoje — amanhã volta ao normal. Cuide da diversão da sua família enquanto é hora!
                         </p>
                    </div>
                 </div>

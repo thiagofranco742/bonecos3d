@@ -37,7 +37,7 @@ const Testimonials: React.FC = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                        O que dizem os pais? <span className="text-yellow-400">⭐</span>
+                        Pais como você estão reconquistando momentos especiais com os filhos... <span className="text-yellow-400">⭐</span>
                     </h2>
                     <p className="text-gray-500">Veja quem já está se divertindo com a família</p>
                 </div>
