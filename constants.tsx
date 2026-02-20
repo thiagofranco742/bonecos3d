@@ -131,7 +131,7 @@ export const PRICING_PLANS: PricingPlan[] = [
             '+450 moldes de brinquedos',
             'Acesso imediato',
             'Garantia de 7 dias',
-            'Suporte por e-mail'
+            'Suporte individual no WhatsApp'
         ],
         buttonText: 'Quero o Básico',
         buttonLink: 'https://pay.cakto.com.br/nodpsin_775241',
@@ -148,7 +148,8 @@ export const PRICING_PLANS: PricingPlan[] = [
             '+750 moldes extras (Total 1.200)',
             '3 Bônus Exclusivos (R$97 grátis)',
             'Acesso vitalício + Atualizações',
-            'Moldes Premium Alta Resolução'
+            'Moldes Premium Alta Resolução',
+            'Suporte VIP individual no WhatsApp'
         ],
         buttonText: 'QUERO O PREMIUM AGORA!',
         buttonLink: 'https://pay.cakto.com.br/38ovo4g',
