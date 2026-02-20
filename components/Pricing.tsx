@@ -1,11 +1,20 @@
-import React from 'react';
-import { Check, ShieldCheck } from 'lucide-react';
+import React, { useState } from 'react';
+import { Check, ShieldCheck, X } from 'lucide-react';
 import Button from './Button';
 import { PRICING_PLANS } from '../constants';
 
 const Pricing: React.FC = () => {
+    const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+
+    const handlePlanClick = (e: React.MouseEvent, planId: string) => {
+        if (planId === 'basic') {
+            e.preventDefault();
+            setShowUpgradeModal(true);
+        }
+    };
+
     return (
-        <section id="pricing" className="py-20 px-4 bg-gradient-to-b from-brand-lightGreen to-white">
+        <section id="pricing" className="py-20 px-4 bg-gradient-to-b from-brand-lightGreen to-white relative">
             <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -73,6 +82,7 @@ const Pricing: React.FC = () => {
                                 fullWidth
                                 className="text-lg"
                                 href={plan.buttonLink}
+                                onClick={(e) => handlePlanClick(e, plan.id)}
                             >
                                 {plan.buttonText}
                             </Button>
@@ -95,6 +105,62 @@ const Pricing: React.FC = () => {
                    </div>
                 </div>
             </div>
+
+            {/* Upgrade Modal */}
+            {showUpgradeModal && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
+                    <div className="bg-white rounded-3xl shadow-2xl max-w-lg w-full p-6 md:p-8 relative animate-in zoom-in-95 duration-200">
+                        <button 
+                            onClick={() => setShowUpgradeModal(false)}
+                            className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+                        >
+                            <X size={24} />
+                        </button>
+
+                        <div className="text-center">
+                            <div className="inline-block bg-brand-orange text-white px-4 py-1 rounded-full text-sm font-bold mb-4 animate-bounce">
+                                🎉 OFERTA ÚNICA!
+                            </div>
+                            
+                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                                ESPERE! Você ganhou um <span className="text-brand-orange">DESCONTÃO!</span>
+                            </h3>
+                            
+                            <p className="text-gray-600 mb-6 text-lg">
+                                Leve o <span className="font-bold text-brand-darkGreen">Pacote PREMIUM</span> (de <span className="line-through">R$ 24,90</span>) por apenas:
+                            </p>
+
+                            <div className="bg-brand-lightGreen/50 rounded-2xl p-6 mb-8 border-2 border-brand-green border-dashed">
+                                <div className="text-5xl font-extrabold text-brand-darkGreen mb-2">
+                                    <span className="text-2xl align-top mr-1">R$</span>
+                                    14,90
+                                </div>
+                                <p className="text-sm text-brand-darkGreen font-medium">
+                                    Economize R$ 10,00 agora mesmo!
+                                </p>
+                            </div>
+
+                            <div className="space-y-3">
+                                <Button 
+                                    variant="primary" 
+                                    fullWidth 
+                                    href="https://pay.cakto.com.br/m4edihq"
+                                    className="text-lg py-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all"
+                                >
+                                    SIM! QUERO O DESCONTO (R$ 14,90)
+                                </Button>
+                                
+                                <a 
+                                    href="https://pay.cakto.com.br/nodpsin_775241"
+                                    className="block text-gray-400 text-sm hover:text-gray-600 underline transition-colors mt-4"
+                                >
+                                    Não, obrigado. Quero pagar R$ 10,00 no pacote básico.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };

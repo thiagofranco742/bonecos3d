@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { GALLERY_IMAGES } from '../constants';
+import Button from './Button';
 
 const Gallery: React.FC = () => {
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -31,8 +32,15 @@ const Gallery: React.FC = () => {
         return () => clearInterval(interval);
     }, []);
 
+    const scrollToPricing = () => {
+        const pricingSection = document.getElementById('pricing');
+        if (pricingSection) {
+            pricingSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <section className="py-16 bg-brand-lightGreen">
+        <section id="gallery" className="py-16 bg-brand-lightGreen">
             <div className="max-w-6xl mx-auto px-4 mb-10 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                     Veja o que seu filho vai criar
@@ -60,8 +68,14 @@ const Gallery: React.FC = () => {
                 ))}
             </div>
             
-            <div className="text-center mt-4">
+            <div className="text-center mt-4 mb-12">
                 <p className="text-sm text-gray-500 italic">Deslize para ver mais →</p>
+            </div>
+
+            <div className="text-center px-4">
+                <Button onClick={scrollToPricing} variant="secondary" className="w-full sm:w-auto text-xl px-10 py-5 shadow-2xl animate-bounce">
+                    QUERO MEUS MOLDES AGORA!
+                </Button>
             </div>
         </section>
     );

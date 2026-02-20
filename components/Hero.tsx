@@ -3,10 +3,10 @@ import Button from './Button';
 import { ChevronDown, Star } from 'lucide-react';
 
 const Hero: React.FC = () => {
-    const scrollToPricing = () => {
-        const pricingSection = document.getElementById('pricing');
-        if (pricingSection) {
-            pricingSection.scrollIntoView({ behavior: 'smooth' });
+    const scrollToGallery = () => {
+        const gallerySection = document.getElementById('gallery');
+        if (gallerySection) {
+            gallerySection.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
                 </div>
 
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-8">
-                    Tire seu filho das telas <span className="text-brand-orange">HOJE</span> e desperte a criatividade!
+                    Chega de Telas! +1.200 Brinquedos de Papel para Imprimir Agora!
                 </h1>
 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white mb-8">
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
-                    <Button onClick={scrollToPricing} variant="secondary" className="w-full sm:w-auto text-xl px-10 py-5">
+                    <Button onClick={scrollToGallery} variant="secondary" className="w-full sm:w-auto text-xl px-10 py-5">
                         QUERO MEUS MOLDES AGORA!
                     </Button>
                     <span className="text-sm text-gray-500 font-medium mt-2 sm:mt-0">
