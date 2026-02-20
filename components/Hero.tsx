@@ -19,10 +19,10 @@ const Hero: React.FC = () => {
                             <Star key={i} size={16} fill="currentColor" />
                         ))}
                     </div>
-                    <span className="text-sm font-semibold text-gray-700">+22.000 pais satisfeitos</span>
+                    <span className="text-sm font-semibold text-gray-700">+4.864 pais satisfeitos</span>
                 </div>
 
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-8">
+                <h1 className="text-[1.6rem] leading-[1.12] md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-8">
                     Chega de Telas! +1.200 Brinquedos de Papel que Nutrem a Imaginação e Fortalecem Laços em Família ❤️
                 </h1>
 
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
                 </div>
                 
                 <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-                    Acesse <strong>+1.200 Moldes Imprimíveis</strong> prontos para recortar e montar. Brinquedos, quebra-cabeças e muito mais para horas de diversão em família.
+                    <strong>+1.200 Moldes Imprimíveis</strong> prontos para recortar e montar. Brinquedos, quebra-cabeças e muito mais para horas de diversão em família.
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
