@@ -33,12 +33,12 @@ const HowItWorks: React.FC = () => {
     }, []);
 
     return (
-        <section className="py-20 bg-brand-orange text-white overflow-hidden">
+        <section className="py-20 bg-brand-blue text-white overflow-hidden">
             <div className="max-w-6xl mx-auto px-4">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                        Tudo pensado para facilitar sua vida de pai/mãe
+                        Tudo pensado para facilitar sua vida
                     </h2>
                     <p className="text-xl text-white/90 max-w-3xl mx-auto">
                         Simples, rápido e feito com carinho.
@@ -51,7 +51,7 @@ const HowItWorks: React.FC = () => {
                         const Icon = step.icon;
                         return (
                             <div key={step.id} className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 relative">
-                                <div className="bg-white text-brand-orange w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                                <div className="bg-white text-brand-blue w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                                     <Icon size={32} strokeWidth={2.5} />
                                 </div>
                                 <h3 className="text-2xl font-bold mb-3">{step.title}</h3>
@@ -84,6 +84,9 @@ const HowItWorks: React.FC = () => {
                                 <img 
                                     src={img} 
                                     alt={`Montagem exemplo ${index + 1}`} 
+                                    loading="lazy"
+                                    width="280"
+                                    height="350"
                                     className="w-full h-full object-cover"
                                 />
                             </div>

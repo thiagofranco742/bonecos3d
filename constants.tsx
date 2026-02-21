@@ -4,26 +4,20 @@ import { Feature, Testimonial, PricingPlan, FAQItem, BonusItem, ProcessStep } fr
 export const FEATURES: Feature[] = [
     {
         id: '1',
-        title: '+450 Brinquedos de Papel',
-        description: 'Animais, monstros e personagens fofos que seu filho monta com orgulho e brinca por horas — desenvolvendo coordenação e paciência.',
-        icon: Scissors
+        title: 'Desconecte Do Estresse',
+        description: 'Crie algo real com as mãos e foque no momento presente. O papercraft é uma meditação ativa comprovada.',
+        icon: Smile
     },
     {
         id: '2',
-        title: 'Quebra-Cabeças Temáticos',
-        description: 'Estimulam concentração e raciocínio lógico, enquanto criam memórias felizes em família.',
-        icon: Puzzle
-    },
-    {
-        id: '3',
-        title: '550 Desenhos para Colorir',
-        description: 'Fofinhos, educativos e com temas que inspiram valores positivos e criatividade pura.',
+        title: 'Decoração Com Identidade',
+        description: 'Peças que viram assunto na sua casa. Suas visitas vão morrer de inveja e ficar impressionadas.',
         icon: Palette
     },
     {
-        id: '4',
-        title: '400 Personagens Temáticos',
-        description: 'Heróis, princesas e piratas que alimentam a imaginação inocente e saudável do seu pequeno.',
+        id: '3',
+        title: 'Tempo De Qualidade',
+        description: 'Momentos criativos com quem você ama. Uma atividade perfeita para fazer com filhos, sobrinhos, netos ou a família toda.',
         icon: User
     }
 ];
@@ -124,14 +118,16 @@ export const TESTIMONIALS: Testimonial[] = [
 export const PRICING_PLANS: PricingPlan[] = [
     {
         id: 'basic',
-        name: 'Pacote Básico',
+        name: 'Kit Iniciante',
         price: 10.00,
-        oldPrice: 37.90,
+        oldPrice: 79.90,
         features: [
-            'Comece simples e seguro',
-            'Ideal para testar',
-            'Ver o sorriso do filho',
-            'Suporte individual no WhatsApp'
+            'Acesso a 1200 Moldes',
+            'Acesso Vitalício',
+            'Personagens',
+            'Plantas',
+            'Objetos',
+            'Diversos'
         ],
         buttonText: 'Quero o Básico',
         buttonLink: 'https://pay.cakto.com.br/nodpsin_775241',
@@ -139,19 +135,39 @@ export const PRICING_PLANS: PricingPlan[] = [
     },
     {
         id: 'premium',
-        name: 'Pacote Premium',
+        name: 'KIT MESTRE',
         price: 24.90,
-        oldPrice: 97.00,
+        oldPrice: 149.90,
         isPopular: true,
         features: [
-            'Tudo que seu filho merece',
-            '+1.200 moldes para o ano todo',
-            '3 Bônus Incríveis',
-            'Acesso vitalício',
-            'Moldes Premium Alta Resolução',
-            'Suporte VIP individual no WhatsApp'
+            'Economize R$ 125,00',
+            'Acesso a +3500 Moldes',
+            'Acesso Vitalício',
+            'Personagens',
+            'Plantas',
+            'Objetos',
+            'Diversos',
+            'Moldes Gigantes (3D)',
+            'Alfabeto Lowpoly',
+            'Castelos',
+            'Coisas Fofas',
+            'Dinossauros',
+            'Dragões',
+            'Espaço - Universo',
+            'Esportes',
+            'Geek',
+            'Mitologia',
+            'Músicos',
+            '+ BÔNUS',
+            '🎁 Zoológico de Papercraft',
+            '🎁 Héróis',
+            '🎁 Animes e Mangás',
+            '🎁 Garagem de Carros',
+            '🎁 Área de Membros Premium',
+            '🎁 Suporte Prioritário',
+            '🎁 Galeria da Comunidade'
         ],
-        buttonText: 'Quero Dar ao Meu Filho Momentos Felizes!',
+        buttonText: 'Quero o KIT Mestre',
         buttonLink: 'https://pay.cakto.com.br/38ovo4g',
         color: 'orange'
     }

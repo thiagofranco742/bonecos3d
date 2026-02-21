@@ -7,23 +7,23 @@ const Features: React.FC = () => {
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                        O que você recebe no pacote?
+                        Por Que Milhares De Pessoas Estão Se Apaixonando Por Essa Experiência?
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Um arsenal completo contra o tédio. Basta imprimir e a mágica acontece.
+                        Descubra os benefícios reais de colocar a mão na massa.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {FEATURES.map((feature) => {
                         const Icon = feature.icon;
                         return (
-                            <div key={feature.id} className="bg-brand-lightGreen/30 p-8 rounded-3xl hover:bg-brand-lightGreen/60 transition-colors duration-300 border border-brand-green/10 flex flex-col items-center text-center group">
-                                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform duration-300 text-brand-orange">
+                            <div key={feature.id} className="bg-brand-blue p-8 rounded-3xl hover:bg-brand-darkBlue transition-colors duration-300 border border-brand-blue/10 flex flex-col items-center text-center group shadow-xl">
+                                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform duration-300 text-brand-blue">
                                     <Icon size={32} />
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                                <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                                <p className="text-white/90 leading-relaxed">{feature.description}</p>
                             </div>
                         );
                     })}

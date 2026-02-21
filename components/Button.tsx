@@ -18,9 +18,9 @@ const Button: React.FC<ButtonProps> = ({
     const baseStyles = "inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2";
     
     const variants = {
-        primary: "bg-brand-green hover:bg-brand-darkGreen text-white shadow-brand-green/30 focus:ring-brand-green",
-        secondary: "bg-brand-orange hover:bg-orange-600 text-white shadow-brand-orange/30 focus:ring-brand-orange",
-        outline: "bg-transparent border-2 border-brand-green text-brand-green hover:bg-brand-green hover:text-white"
+        primary: "bg-brand-yellow hover:bg-yellow-500 text-gray-900 shadow-brand-yellow/30 focus:ring-brand-yellow !bg-[#ffbd00]",
+        secondary: "bg-brand-emerald hover:bg-emerald-600 text-white shadow-brand-emerald/30 focus:ring-brand-emerald",
+        outline: "bg-transparent border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white"
     };
     
     const combinedClasses = `${baseStyles} ${variants[variant]} ${fullWidth ? 'w-full' : ''} ${className}`;

@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
         <footer className="bg-gray-900 text-white py-12 px-4 border-t border-gray-800">
             <div className="max-w-6xl mx-auto text-center">
                 <div className="mb-8">
-                    <h3 className="text-2xl font-bold text-brand-green mb-2">Central Designer</h3>
+                    <h3 className="text-2xl font-bold text-brand-blue mb-2">Central Designer</h3>
                     <p className="text-gray-400 text-sm">Diversão criativa, saudável e em família.</p>
                 </div>
                 

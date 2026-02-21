@@ -43,11 +43,47 @@ const Gallery: React.FC = () => {
         <section id="gallery" className="py-16 bg-brand-lightGreen">
             <div className="max-w-6xl mx-auto px-4 mb-10 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    Veja o que seu filho vai criar
+                    Veja o que você vai criar
                 </h2>
                 <p className="text-lg text-gray-700 max-w-3xl mx-auto">
                     Fotos reais enviadas por pais que já estão usando.
                 </p>
+            </div>
+
+            {/* Static Images Grid */}
+            <div className="max-w-6xl mx-auto px-4 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="rounded-2xl overflow-hidden shadow-lg border-4 border-white hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="https://i.ibb.co/dJgyXxcj/MODULO-01-VAI-RECEBER.webp" 
+                            alt="Módulo 01 - O que você vai receber" 
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                            className="w-full h-auto object-cover"
+                        />
+                    </div>
+                    <div className="rounded-2xl overflow-hidden shadow-lg border-4 border-white hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="https://i.ibb.co/jvymXQ5N/MODULO-02-VAI-RECEBER.webp" 
+                            alt="Módulo 02 - O que você vai receber" 
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                            className="w-full h-auto object-cover"
+                        />
+                    </div>
+                    <div className="rounded-2xl overflow-hidden shadow-lg border-4 border-white hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="https://i.ibb.co/V0BHNRw3/MODULO-03-VAI-RECEBER.webp" 
+                            alt="Módulo 03 - O que você vai receber" 
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                            className="w-full h-auto object-cover"
+                        />
+                    </div>
+                </div>
             </div>
 
             <div 
@@ -59,6 +95,9 @@ const Gallery: React.FC = () => {
                         <img 
                             src={img} 
                             alt={`Exemplo ${index + 1}`} 
+                            loading="lazy"
+                            width="600"
+                            height="400"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                         />
                          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">

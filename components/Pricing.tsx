@@ -14,7 +14,7 @@ const Pricing: React.FC = () => {
     };
 
     return (
-        <section id="pricing" className="py-20 px-4 bg-gradient-to-b from-brand-lightGreen to-white relative">
+        <section id="pricing" className="py-20 px-4 bg-gradient-to-b from-brand-lightBlue/30 to-white relative">
             <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -25,60 +25,63 @@ const Pricing: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     {PRICING_PLANS.map((plan) => (
                         <div 
                             key={plan.id} 
-                            className={`relative bg-white rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-2 ${
+                            className={`relative bg-brand-blue rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-2 ${
                                 plan.isPopular 
-                                    ? 'border-4 border-brand-orange shadow-2xl scale-105 md:scale-110 z-10' 
-                                    : 'border border-gray-200 shadow-xl'
+                                    ? 'border-4 border-brand-yellow shadow-2xl scale-105 md:scale-110 z-10' 
+                                    : 'border border-brand-blue/20 shadow-xl'
                             }`}
                         >
                             {plan.isPopular && (
-                                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-brand-orange text-white px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wider shadow-lg">
+                                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-brand-yellow text-gray-900 px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wider shadow-lg">
                                     Mais Vendido
                                 </div>
                             )}
 
                             <div className="text-center mb-8">
-                                <h3 className="text-2xl font-bold text-gray-800 mb-2">{plan.name}</h3>
+                                <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
                                 
                                 {plan.id === 'premium' && (
-                                    <div className="mb-4 rounded-xl overflow-hidden shadow-sm border border-gray-100">
+                                    <div className="mb-4 rounded-xl overflow-hidden shadow-sm border border-white/20">
                                         <img 
                                             src="https://media.atomicatpages.net/u/jkXVp80niLVY7exUbTx8s7SZirl2/Pictures/share/page2MlLdnZ/nEbbkE7822562.png?quality=72" 
                                             srcSet="https://media.atomicatpages.net/u/jkXVp80niLVY7exUbTx8s7SZirl2/Pictures/share/page2MlLdnZ/nEbbkE7822562.png?quality=72 1500w, https://media.atomicatpages.net/u/jkXVp80niLVY7exUbTx8s7SZirl2/Pictures/share/page2MlLdnZ/nEbbkE7822562.png?width=300&height=160&quality=74 300w, https://media.atomicatpages.net/u/jkXVp80niLVY7exUbTx8s7SZirl2/Pictures/share/page2MlLdnZ/nEbbkE7822562.png?width=768&height=409&quality=80 768w, https://media.atomicatpages.net/u/jkXVp80niLVY7exUbTx8s7SZirl2/Pictures/share/page2MlLdnZ/nEbbkE7822562.png?width=1024&height=545&quality=88 1024w"
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                             alt="Prévia do Pacote Premium" 
+                                            loading="lazy"
+                                            width="500"
+                                            height="300"
                                             className="w-full h-auto object-cover"
                                         />
                                     </div>
                                 )}
 
                                 <div className="flex justify-center items-center gap-2 mb-2">
-                                    <span className="text-gray-400 line-through text-lg">R$ {plan.oldPrice.toFixed(2)}</span>
+                                    <span className="text-white/60 line-through text-lg">R$ {plan.oldPrice.toFixed(2)}</span>
                                 </div>
-                                <div className="text-5xl font-extrabold text-gray-900 mb-2">
+                                <div className="text-5xl font-extrabold text-white mb-2">
                                     <span className="text-2xl align-top mr-1">R$</span>
                                     {plan.price.toFixed(2).replace('.', ',')}
                                 </div>
-                                <p className="text-gray-500 text-sm">Pagamento único</p>
+                                <p className="text-white/70 text-sm">Pagamento único</p>
                             </div>
 
                             <ul className="space-y-4 mb-8">
                                 {plan.features.map((feature, idx) => (
                                     <li key={idx} className="flex items-start gap-3">
-                                        <div className={`mt-1 p-0.5 rounded-full ${plan.isPopular ? 'bg-brand-orange text-white' : 'bg-brand-green text-white'}`}>
+                                        <div className={`mt-1 p-0.5 rounded-full ${plan.isPopular ? 'bg-brand-yellow text-gray-900' : 'bg-brand-emerald text-white'}`}>
                                             <Check size={12} strokeWidth={4} />
                                         </div>
-                                        <span className="text-gray-700 font-medium">{feature}</span>
+                                        <span className="text-white/90 font-medium">{feature}</span>
                                     </li>
                                 ))}
                             </ul>
 
                             <Button 
-                                variant={plan.color === 'orange' ? 'secondary' : 'primary'} 
+                                variant="secondary" 
                                 fullWidth
                                 className="text-lg"
                                 href={plan.buttonLink}
@@ -88,8 +91,8 @@ const Pricing: React.FC = () => {
                             </Button>
 
                             {plan.isPopular && (
-                                <p className="text-center mt-4 text-xs text-gray-500 flex items-center justify-center gap-1">
-                                    <ShieldCheck size={14} className="text-green-500"/>
+                                <p className="text-center mt-4 text-xs text-white/60 flex items-center justify-center gap-1">
+                                    <ShieldCheck size={14} className="text-brand-emerald"/>
                                     Garantia Incondicional de 7 Dias: Se não amar, devolvemos seu dinheiro. Sem perguntas.
                                 </p>
                             )}
